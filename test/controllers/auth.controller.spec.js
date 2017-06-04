@@ -13,8 +13,9 @@ describe('AuthController', function(){
     //     throw ({error: 'error'});
     // });
 
-    describe.only('isAuthorized', function(){
+    describe.skip('isAuthorized', function(){ // might be skipped
         it('should return false if not authorized', function(){
+            this.skip(); // or might be skipped this way (not needed if describe.skip() already above)
             assert.equal(false, authController.isAuthorized('admin'));
         });
         it('should return true if authorized', function(){
