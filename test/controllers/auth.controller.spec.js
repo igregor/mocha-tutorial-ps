@@ -13,9 +13,10 @@ describe('AuthController', function(){
     });
     describe('isAuthorizedAsync', function(){
         it('should return false if not authorized', function(done){ // pass done, explanation below
+            this.timeout(2500); // the timeout should be added to execute the test after timeout, 'this' reffers to mocha
             authController.isAuthorizedAsync(['user', 'another_user'], 'admin',
             function(isAuth) {
-                assert.equal(true, isAuth); // should be true to pass
+                assert.equal(false, isAuth);
                 done(); // should be added to tell mocha, that's the callback is done,
                 // without done, the test will be passed
             });
