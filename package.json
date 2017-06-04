@@ -1,0 +1,14 @@
+{
+  "name": "mocha-tutorial-pluralsight",
+  "version": "1.0.0",
+  "description": "Pluralsight course https://app.pluralsight.com/library/courses/mocha-javascript-testing-nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './test/**/*.js'"
+  },
+  "author": "Grzegorz Wojtanowicz <wojtanowiczgrzegorz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^3.4.2"
+  }
+}
