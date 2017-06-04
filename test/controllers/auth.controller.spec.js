@@ -13,7 +13,7 @@ describe('AuthController', function(){
     //     throw ({error: 'error'});
     // });
 
-    describe('isAuthorized', function(){
+    describe.only('isAuthorized', function(){
         it('should return false if not authorized', function(){
             assert.equal(false, authController.isAuthorized('admin'));
         });
